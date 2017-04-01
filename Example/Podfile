@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QNRefresh_Example' do
+  pod 'QNRefresh', :path => '../'
+
+  target 'QNRefresh_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
