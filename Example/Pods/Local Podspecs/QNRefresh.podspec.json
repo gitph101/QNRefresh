@@ -1,0 +1,22 @@
+{
+  "name": "QNRefresh",
+  "version": "0.1.0",
+  "summary": "A short description of QNRefresh.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gitph101/QNRefresh",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gitph101": "850867354@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/gitph101/QNRefresh.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QNRefresh/Classes/**/*"
+}

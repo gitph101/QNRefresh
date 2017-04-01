@@ -1,0 +1,16 @@
+PODS:
+  - QNRefresh (0.1.0)
+
+DEPENDENCIES:
+  - QNRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  QNRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QNRefresh: d285c4ecbc3fffb0eab862ae15bd954b586422e5
+
+PODFILE CHECKSUM: 8db4e01489963320f63c7d32fc535cf2464092c0
+
+COCOAPODS: 1.2.0

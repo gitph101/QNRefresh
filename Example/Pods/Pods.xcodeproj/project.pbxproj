@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17F257FB33AC55554D8FBD1761EB9523 /* QNRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */; };
+		234C27D8AF65BC038484F02B3414945A /* Pods-QNRefresh_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F49728CF078B2232A31C05F797E74967 /* Pods-QNRefresh_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436886219AE0D3F04DC67D56B6D830A8 /* Pods-QNRefresh_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA644434513BC5684F88B7E86DCDEED3 /* Pods-QNRefresh_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C5E1D5CF86603F1DEB20871DDC57CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9049EA92D0BC592A27A5F5B23208430C /* QNRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C464CFD7FD5B2DEE6FA6709AB60A3A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CBFA883F105A7D246815EBF338BF8B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E2B3A6FA1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */; };
+		E2B3A6FB1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */; };
+		E2B3A7021E8F729200623AFD /* QNRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */; };
+		E2B3A7031E8F729200623AFD /* QNRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */; };
+		E2B3A7061E8F827600623AFD /* QNHeaderRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */; };
+		E2B3A7071E8F827600623AFD /* QNHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */; };
+		E70B24F964B9115ADE8A227A9C446350 /* Pods-QNRefresh_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC23D47BEC2B7ECB166DBF132A75263 /* Pods-QNRefresh_Tests-dummy.m */; };
+		EDE722E96CB28A0ACC1103C30F1DA843 /* Pods-QNRefresh_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D40837FB946B1A002E833CA4F1CEDBA /* Pods-QNRefresh_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A1C9905100FAB891432D244CBA96E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112ACE78B2AA95A0934C50442F72102A;
+			remoteInfo = QNRefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B72BA3DF084B005C0DFF5A074695CB /* Pods-QNRefresh_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Example-resources.sh"; sourceTree = "<group>"; };
+		073692008B2DDD46D80D85705F087EA1 /* Pods-QNRefresh_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QNRefresh_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B28BD7B844EF968907036A5C7D3BDF1 /* Pods-QNRefresh_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QNRefresh_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BC23D47BEC2B7ECB166DBF132A75263 /* Pods-QNRefresh_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QNRefresh_Tests-dummy.m"; sourceTree = "<group>"; };
+		12642E1C7491DF914B5EB4C3C1CE9F2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1698C27237983C23C8A3400ABEDBD040 /* QNRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QNRefresh-prefix.pch"; sourceTree = "<group>"; };
+		1B15987A5F98A49FB2264369EBE4054E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27827BC32588B9CB8E4A43D204792023 /* Pods-QNRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		29C240D5DCEC4C20F4907862BDFB49AD /* QNRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QNRefresh.modulemap; sourceTree = "<group>"; };
+		2AE0135FD36D68DA882F2D17FA27DDA5 /* Pods_QNRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BCD0B9844E2540F56491C3E7EBC93F /* Pods-QNRefresh_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Tests-resources.sh"; sourceTree = "<group>"; };
+		665B230DBDAB69D7B27D3BC24BD55A9E /* Pods-QNRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		69553F367C2046BF5A34E62FBA192035 /* Pods_QNRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A5FF1A4E101715BCE5F1CCEBFC54A7B /* Pods-QNRefresh_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QNRefresh_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		894C60051C8C9E99AB1E1B9D75441839 /* Pods-QNRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QNRefresh-dummy.m"; sourceTree = "<group>"; };
+		8D1BCE636D10C375E5CB9A58777D2A0A /* Pods-QNRefresh_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Example-frameworks.sh"; sourceTree = "<group>"; };
+		901B91BFDF851096FF0185A217A9D7FF /* Pods-QNRefresh_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QNRefresh_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93F0B6339D444A35774E6E3EEA32F2C5 /* QNRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QNRefresh.xcconfig; sourceTree = "<group>"; };
+		9BD5BB74D7BC1BAA012333C954D4D4E7 /* Pods-QNRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D40837FB946B1A002E833CA4F1CEDBA /* Pods-QNRefresh_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QNRefresh_Example-dummy.m"; sourceTree = "<group>"; };
+		A4C7F3F7E86080BBE0628CEC6BB4EF81 /* Pods-QNRefresh_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QNRefresh_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ADA6FA9A255E7C89E07BE0C75DF53494 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B5EC5347B7479E2D9C12391D5853F9 /* QNRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QNRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DA644434513BC5684F88B7E86DCDEED3 /* Pods-QNRefresh_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QNRefresh_Example-umbrella.h"; sourceTree = "<group>"; };
+		E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QNHeaderRefresh.h"; sourceTree = "<group>"; };
+		E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QNHeaderRefresh.m"; sourceTree = "<group>"; };
+		E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRefreshComponent.h; sourceTree = "<group>"; };
+		E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRefreshComponent.m; sourceTree = "<group>"; };
+		E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHeaderRefreshView.h; sourceTree = "<group>"; };
+		E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNHeaderRefreshView.m; sourceTree = "<group>"; };
+		E8AF386733C807DC312B97B864F5DE3F /* Pods-QNRefresh_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QNRefresh_Tests.modulemap"; sourceTree = "<group>"; };
+		EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QNRefresh-umbrella.h"; sourceTree = "<group>"; };
+		F49728CF078B2232A31C05F797E74967 /* Pods-QNRefresh_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QNRefresh_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F7D75E1BBDD41289FDA1325486E36BD3 /* Pods-QNRefresh_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Tests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86D0D5D0BD98736E13DFE1B0509D4DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C5E1D5CF86603F1DEB20871DDC57CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E13422E38C3B148B482D6F54CCD4C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C464CFD7FD5B2DEE6FA6709AB60A3A5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC58BE934B0A1C1833893042E9D784AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFA883F105A7D246815EBF338BF8B6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0410DE7AC1F95864A02266CF47E30580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0135FD36D68DA882F2D17FA27DDA5 /* Pods_QNRefresh_Example.framework */,
+				69553F367C2046BF5A34E62FBA192035 /* Pods_QNRefresh_Tests.framework */,
+				C6B5EC5347B7479E2D9C12391D5853F9 /* QNRefresh.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D8ACA6924B2BD8F572A901C24D1F64 /* Pods-QNRefresh_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				12642E1C7491DF914B5EB4C3C1CE9F2A /* Info.plist */,
+				E8AF386733C807DC312B97B864F5DE3F /* Pods-QNRefresh_Tests.modulemap */,
+				A4C7F3F7E86080BBE0628CEC6BB4EF81 /* Pods-QNRefresh_Tests-acknowledgements.markdown */,
+				0B28BD7B844EF968907036A5C7D3BDF1 /* Pods-QNRefresh_Tests-acknowledgements.plist */,
+				0BC23D47BEC2B7ECB166DBF132A75263 /* Pods-QNRefresh_Tests-dummy.m */,
+				F7D75E1BBDD41289FDA1325486E36BD3 /* Pods-QNRefresh_Tests-frameworks.sh */,
+				52BCD0B9844E2540F56491C3E7EBC93F /* Pods-QNRefresh_Tests-resources.sh */,
+				F49728CF078B2232A31C05F797E74967 /* Pods-QNRefresh_Tests-umbrella.h */,
+				9BD5BB74D7BC1BAA012333C954D4D4E7 /* Pods-QNRefresh_Tests.debug.xcconfig */,
+				665B230DBDAB69D7B27D3BC24BD55A9E /* Pods-QNRefresh_Tests.release.xcconfig */,
+			);
+			name = "Pods-QNRefresh_Tests";
+			path = "Target Support Files/Pods-QNRefresh_Tests";
+			sourceTree = "<group>";
+		};
+		4E6FF81CDC8C7BA51F5807F0C8AD72F4 /* QNRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				4F53C187DC645B191E6254E131253834 /* QNRefresh */,
+				BF6EC330F9331B6A2F2A142EBCD35CBE /* Support Files */,
+			);
+			name = QNRefresh;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4F53C187DC645B191E6254E131253834 /* QNRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EE788F3647FA7118446C43B8CB8F66BC /* Classes */,
+			);
+			path = QNRefresh;
+			sourceTree = "<group>";
+		};
+		724EBFF828F6B9A476294ED0DFE68870 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2A7B98F950C1F2A192295BE0D9D07F4 /* Pods-QNRefresh_Example */,
+				46D8ACA6924B2BD8F572A901C24D1F64 /* Pods-QNRefresh_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A7DBF97616077F56C08E7D5167A56763 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0410DE7AC1F95864A02266CF47E30580 /* Products */,
+				724EBFF828F6B9A476294ED0DFE68870 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A7DBF97616077F56C08E7D5167A56763 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E6FF81CDC8C7BA51F5807F0C8AD72F4 /* QNRefresh */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B2A7B98F950C1F2A192295BE0D9D07F4 /* Pods-QNRefresh_Example */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6FA9A255E7C89E07BE0C75DF53494 /* Info.plist */,
+				901B91BFDF851096FF0185A217A9D7FF /* Pods-QNRefresh_Example.modulemap */,
+				6A5FF1A4E101715BCE5F1CCEBFC54A7B /* Pods-QNRefresh_Example-acknowledgements.markdown */,
+				073692008B2DDD46D80D85705F087EA1 /* Pods-QNRefresh_Example-acknowledgements.plist */,
+				9D40837FB946B1A002E833CA4F1CEDBA /* Pods-QNRefresh_Example-dummy.m */,
+				8D1BCE636D10C375E5CB9A58777D2A0A /* Pods-QNRefresh_Example-frameworks.sh */,
+				02B72BA3DF084B005C0DFF5A074695CB /* Pods-QNRefresh_Example-resources.sh */,
+				DA644434513BC5684F88B7E86DCDEED3 /* Pods-QNRefresh_Example-umbrella.h */,
+				27827BC32588B9CB8E4A43D204792023 /* Pods-QNRefresh_Example.debug.xcconfig */,
+				894C60051C8C9E99AB1E1B9D75441839 /* Pods-QNRefresh_Example.release.xcconfig */,
+			);
+			name = "Pods-QNRefresh_Example";
+			path = "Target Support Files/Pods-QNRefresh_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6EC330F9331B6A2F2A142EBCD35CBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B15987A5F98A49FB2264369EBE4054E /* Info.plist */,
+				29C240D5DCEC4C20F4907862BDFB49AD /* QNRefresh.modulemap */,
+				93F0B6339D444A35774E6E3EEA32F2C5 /* QNRefresh.xcconfig */,
+				8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */,
+				1698C27237983C23C8A3400ABEDBD040 /* QNRefresh-prefix.pch */,
+				EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/QNRefresh";
+			sourceTree = "<group>";
+		};
+		EE788F3647FA7118446C43B8CB8F66BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */,
+				E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */,
+				E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */,
+				E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */,
+				E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */,
+				E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AA00B01B60D0EF7ADA0D4A568273BDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9049EA92D0BC592A27A5F5B23208430C /* QNRefresh-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BFB05FF1C26C5F4D0E239D78ADC5BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B3A6FA1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h in Headers */,
+				E2B3A7061E8F827600623AFD /* QNHeaderRefreshView.h in Headers */,
+				436886219AE0D3F04DC67D56B6D830A8 /* Pods-QNRefresh_Example-umbrella.h in Headers */,
+				E2B3A7021E8F729200623AFD /* QNRefreshComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4C7C674CA840F57140C5652A3BB4CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234C27D8AF65BC038484F02B3414945A /* Pods-QNRefresh_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		112ACE78B2AA95A0934C50442F72102A /* QNRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA3D428F97B0C87682695387AF86A57 /* Build configuration list for PBXNativeTarget "QNRefresh" */;
+			buildPhases = (
+				B7355E3060A2038D6C1AAD44A455447F /* Sources */,
+				86D0D5D0BD98736E13DFE1B0509D4DA1 /* Frameworks */,
+				1AA00B01B60D0EF7ADA0D4A568273BDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNRefresh;
+			productName = QNRefresh;
+			productReference = C6B5EC5347B7479E2D9C12391D5853F9 /* QNRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34BCA55C21E2F9405F448397BF7D7C9E /* Pods-QNRefresh_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBDF5324DBBCE7233B1E5CB8156EB45 /* Build configuration list for PBXNativeTarget "Pods-QNRefresh_Tests" */;
+			buildPhases = (
+				185E1C3B1B70557A8C47BAD7C2B2CEBB /* Sources */,
+				9E13422E38C3B148B482D6F54CCD4C02 /* Frameworks */,
+				FC4C7C674CA840F57140C5652A3BB4CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QNRefresh_Tests";
+			productName = "Pods-QNRefresh_Tests";
+			productReference = 69553F367C2046BF5A34E62FBA192035 /* Pods_QNRefresh_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8015F44170D0068075CD662B066CCD4 /* Pods-QNRefresh_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63A26A44FE9F8F73846FF377C199352 /* Build configuration list for PBXNativeTarget "Pods-QNRefresh_Example" */;
+			buildPhases = (
+				6290646165997DE576D0766290DC3A25 /* Sources */,
+				EC58BE934B0A1C1833893042E9D784AB /* Frameworks */,
+				A2BFB05FF1C26C5F4D0E239D78ADC5BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0890C8D18065863E9153138CE0D58850 /* PBXTargetDependency */,
+			);
+			name = "Pods-QNRefresh_Example";
+			productName = "Pods-QNRefresh_Example";
+			productReference = 2AE0135FD36D68DA882F2D17FA27DDA5 /* Pods_QNRefresh_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0410DE7AC1F95864A02266CF47E30580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8015F44170D0068075CD662B066CCD4 /* Pods-QNRefresh_Example */,
+				34BCA55C21E2F9405F448397BF7D7C9E /* Pods-QNRefresh_Tests */,
+				112ACE78B2AA95A0934C50442F72102A /* QNRefresh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185E1C3B1B70557A8C47BAD7C2B2CEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70B24F964B9115ADE8A227A9C446350 /* Pods-QNRefresh_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6290646165997DE576D0766290DC3A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B3A7031E8F729200623AFD /* QNRefreshComponent.m in Sources */,
+				EDE722E96CB28A0ACC1103C30F1DA843 /* Pods-QNRefresh_Example-dummy.m in Sources */,
+				E2B3A7071E8F827600623AFD /* QNHeaderRefreshView.m in Sources */,
+				E2B3A6FB1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7355E3060A2038D6C1AAD44A455447F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F257FB33AC55554D8FBD1761EB9523 /* QNRefresh-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0890C8D18065863E9153138CE0D58850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QNRefresh;
+			target = 112ACE78B2AA95A0934C50442F72102A /* QNRefresh */;
+			targetProxy = 7A1C9905100FAB891432D244CBA96E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199E66E3A2B38E943B2189AFDF126E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894C60051C8C9E99AB1E1B9D75441839 /* Pods-QNRefresh_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QNRefresh_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QNRefresh_Example/Pods-QNRefresh_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QNRefresh_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77837F86129E2241CFCD60EC80AD06EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F0B6339D444A35774E6E3EEA32F2C5 /* QNRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QNRefresh/QNRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QNRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QNRefresh/QNRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QNRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		816826CDD4E304B70C8B0DD73A441D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F0B6339D444A35774E6E3EEA32F2C5 /* QNRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QNRefresh/QNRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QNRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QNRefresh/QNRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QNRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84DD08F7E84175F0B09CB542B9DE978F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665B230DBDAB69D7B27D3BC24BD55A9E /* Pods-QNRefresh_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QNRefresh_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QNRefresh_Tests/Pods-QNRefresh_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QNRefresh_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C129113300AF9C5E9CEE2F329BECF19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27827BC32588B9CB8E4A43D204792023 /* Pods-QNRefresh_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QNRefresh_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QNRefresh_Example/Pods-QNRefresh_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QNRefresh_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAC8618FC3AC8664B0CBEF44669A58E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD5BB74D7BC1BAA012333C954D4D4E7 /* Pods-QNRefresh_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QNRefresh_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QNRefresh_Tests/Pods-QNRefresh_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QNRefresh_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBDF5324DBBCE7233B1E5CB8156EB45 /* Build configuration list for PBXNativeTarget "Pods-QNRefresh_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8618FC3AC8664B0CBEF44669A58E3 /* Debug */,
+				84DD08F7E84175F0B09CB542B9DE978F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DA3D428F97B0C87682695387AF86A57 /* Build configuration list for PBXNativeTarget "QNRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77837F86129E2241CFCD60EC80AD06EC /* Debug */,
+				816826CDD4E304B70C8B0DD73A441D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63A26A44FE9F8F73846FF377C199352 /* Build configuration list for PBXNativeTarget "Pods-QNRefresh_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C129113300AF9C5E9CEE2F329BECF19E /* Debug */,
+				199E66E3A2B38E943B2189AFDF126E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

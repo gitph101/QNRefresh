@@ -1,0 +1,6 @@
+framework module QNRefresh {
+  umbrella header "QNRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}
