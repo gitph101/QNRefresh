@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QNRefreshComponent.h"
 
 @class QNHeaderRefreshView;
+
 @interface UIScrollView (QNHeaderRefresh)
 
+-(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block position:(QNRefreshPosition)position;
 @property (nonatomic, strong, readonly) QNHeaderRefreshView *headerRefreshView;
 
 @end

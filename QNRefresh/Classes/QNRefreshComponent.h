@@ -46,4 +46,7 @@ typedef void (^QNRefreshComponentEndRefreshingCompletionBlock)();
 
 @property (copy, nonatomic) QNRefreshComponentRefreshingBlock refreshingBlock;
 
+@property (nonatomic, readwrite) CGFloat originalTopInset;
+@property (nonatomic, readwrite) CGFloat originalBottomInset;
+
 @end

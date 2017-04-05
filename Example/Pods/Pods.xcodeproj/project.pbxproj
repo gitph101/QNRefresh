@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F257FB33AC55554D8FBD1761EB9523 /* QNRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */; };
 		234C27D8AF65BC038484F02B3414945A /* Pods-QNRefresh_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F49728CF078B2232A31C05F797E74967 /* Pods-QNRefresh_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40AB4297443115FAC00436D37321D099 /* UIScrollView+QNHeaderRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C562B82FFC1981CD2D94FB4E857FD15 /* UIScrollView+QNHeaderRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		436886219AE0D3F04DC67D56B6D830A8 /* Pods-QNRefresh_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA644434513BC5684F88B7E86DCDEED3 /* Pods-QNRefresh_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		526C9049AACECA9E3BCC29A4332C84C2 /* QNRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D3ED20E4347C61B6491FD6A4F40BC476 /* QNRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73AB1119EA0011D4622E6B5F0FF96917 /* QNRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80C5E1D5CF86603F1DEB20871DDC57CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		9049EA92D0BC592A27A5F5B23208430C /* QNRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A043927BDEE4E1F6628D7A2F03AA2630 /* QNRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */; };
+		A57BBCBB636B5E2E6579DA864FDB74E3 /* QNHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2023240CEFE9C9434EEAB81BA5733082 /* QNHeaderRefreshView.m */; };
+		BFF500C840089C10AA066F4D4F26EAFD /* QNRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7779E09621022515EDD1E626E1280FBB /* QNRefreshComponent.m */; };
 		C464CFD7FD5B2DEE6FA6709AB60A3A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C6295FF11C8238FC338B84DDCB19084C /* UIScrollView+QNHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 742045DE2053F7AF66754A350ABDE9F9 /* UIScrollView+QNHeaderRefresh.m */; };
 		CBFA883F105A7D246815EBF338BF8B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E2B3A6FA1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */; };
-		E2B3A6FB1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */; };
-		E2B3A7021E8F729200623AFD /* QNRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */; };
-		E2B3A7031E8F729200623AFD /* QNRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */; };
-		E2B3A7061E8F827600623AFD /* QNHeaderRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */; };
-		E2B3A7071E8F827600623AFD /* QNHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */; };
 		E70B24F964B9115ADE8A227A9C446350 /* Pods-QNRefresh_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC23D47BEC2B7ECB166DBF132A75263 /* Pods-QNRefresh_Tests-dummy.m */; };
+		EB7F74A6081A28391C8FED4380DB3AC8 /* QNHeaderRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = 237B2C6C877C57E89A531DB0CA4350A0 /* QNHeaderRefreshView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDE722E96CB28A0ACC1103C30F1DA843 /* Pods-QNRefresh_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D40837FB946B1A002E833CA4F1CEDBA /* Pods-QNRefresh_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -42,33 +42,33 @@
 		12642E1C7491DF914B5EB4C3C1CE9F2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1698C27237983C23C8A3400ABEDBD040 /* QNRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QNRefresh-prefix.pch"; sourceTree = "<group>"; };
 		1B15987A5F98A49FB2264369EBE4054E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2023240CEFE9C9434EEAB81BA5733082 /* QNHeaderRefreshView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QNHeaderRefreshView.m; sourceTree = "<group>"; };
+		237B2C6C877C57E89A531DB0CA4350A0 /* QNHeaderRefreshView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QNHeaderRefreshView.h; sourceTree = "<group>"; };
 		27827BC32588B9CB8E4A43D204792023 /* Pods-QNRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		29C240D5DCEC4C20F4907862BDFB49AD /* QNRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QNRefresh.modulemap; sourceTree = "<group>"; };
-		2AE0135FD36D68DA882F2D17FA27DDA5 /* Pods_QNRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C240D5DCEC4C20F4907862BDFB49AD /* QNRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = QNRefresh.modulemap; sourceTree = "<group>"; };
+		2AE0135FD36D68DA882F2D17FA27DDA5 /* Pods_QNRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QNRefresh_Example.framework; path = "Pods-QNRefresh_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C562B82FFC1981CD2D94FB4E857FD15 /* UIScrollView+QNHeaderRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QNHeaderRefresh.h"; sourceTree = "<group>"; };
 		52BCD0B9844E2540F56491C3E7EBC93F /* Pods-QNRefresh_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Tests-resources.sh"; sourceTree = "<group>"; };
 		665B230DBDAB69D7B27D3BC24BD55A9E /* Pods-QNRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		69553F367C2046BF5A34E62FBA192035 /* Pods_QNRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69553F367C2046BF5A34E62FBA192035 /* Pods_QNRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QNRefresh_Tests.framework; path = "Pods-QNRefresh_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5FF1A4E101715BCE5F1CCEBFC54A7B /* Pods-QNRefresh_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QNRefresh_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		742045DE2053F7AF66754A350ABDE9F9 /* UIScrollView+QNHeaderRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QNHeaderRefresh.m"; sourceTree = "<group>"; };
+		7779E09621022515EDD1E626E1280FBB /* QNRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QNRefreshComponent.m; sourceTree = "<group>"; };
 		894C60051C8C9E99AB1E1B9D75441839 /* Pods-QNRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8A2E23B95650533F56A6FCB388A115A1 /* QNRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QNRefresh-dummy.m"; sourceTree = "<group>"; };
 		8D1BCE636D10C375E5CB9A58777D2A0A /* Pods-QNRefresh_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Example-frameworks.sh"; sourceTree = "<group>"; };
-		901B91BFDF851096FF0185A217A9D7FF /* Pods-QNRefresh_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QNRefresh_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		901B91BFDF851096FF0185A217A9D7FF /* Pods-QNRefresh_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QNRefresh_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F0B6339D444A35774E6E3EEA32F2C5 /* QNRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QNRefresh.xcconfig; sourceTree = "<group>"; };
 		9BD5BB74D7BC1BAA012333C954D4D4E7 /* Pods-QNRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QNRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D40837FB946B1A002E833CA4F1CEDBA /* Pods-QNRefresh_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QNRefresh_Example-dummy.m"; sourceTree = "<group>"; };
 		A4C7F3F7E86080BBE0628CEC6BB4EF81 /* Pods-QNRefresh_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QNRefresh_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ADA6FA9A255E7C89E07BE0C75DF53494 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6B5EC5347B7479E2D9C12391D5853F9 /* QNRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QNRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B5EC5347B7479E2D9C12391D5853F9 /* QNRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QNRefresh.framework; path = QNRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3ED20E4347C61B6491FD6A4F40BC476 /* QNRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QNRefreshComponent.h; sourceTree = "<group>"; };
 		DA644434513BC5684F88B7E86DCDEED3 /* Pods-QNRefresh_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QNRefresh_Example-umbrella.h"; sourceTree = "<group>"; };
-		E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QNHeaderRefresh.h"; sourceTree = "<group>"; };
-		E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QNHeaderRefresh.m"; sourceTree = "<group>"; };
-		E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNRefreshComponent.h; sourceTree = "<group>"; };
-		E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNRefreshComponent.m; sourceTree = "<group>"; };
-		E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNHeaderRefreshView.h; sourceTree = "<group>"; };
-		E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNHeaderRefreshView.m; sourceTree = "<group>"; };
-		E8AF386733C807DC312B97B864F5DE3F /* Pods-QNRefresh_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QNRefresh_Tests.modulemap"; sourceTree = "<group>"; };
+		E8AF386733C807DC312B97B864F5DE3F /* Pods-QNRefresh_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QNRefresh_Tests.modulemap"; sourceTree = "<group>"; };
 		EFC252AD796A6DF220B004129ACDBDDD /* QNRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QNRefresh-umbrella.h"; sourceTree = "<group>"; };
 		F49728CF078B2232A31C05F797E74967 /* Pods-QNRefresh_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QNRefresh_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F7D75E1BBDD41289FDA1325486E36BD3 /* Pods-QNRefresh_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QNRefresh_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -112,6 +112,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		457C20DBE298817B8B304AB0C2731C3F /* QNRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B15A094A2B3EFAEA50EA9624F5AF0C43 /* Classes */,
+			);
+			name = QNRefresh;
+			path = QNRefresh;
+			sourceTree = "<group>";
+		};
 		46D8ACA6924B2BD8F572A901C24D1F64 /* Pods-QNRefresh_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,19 +142,11 @@
 		4E6FF81CDC8C7BA51F5807F0C8AD72F4 /* QNRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				4F53C187DC645B191E6254E131253834 /* QNRefresh */,
+				457C20DBE298817B8B304AB0C2731C3F /* QNRefresh */,
 				BF6EC330F9331B6A2F2A142EBCD35CBE /* Support Files */,
 			);
 			name = QNRefresh;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		4F53C187DC645B191E6254E131253834 /* QNRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				EE788F3647FA7118446C43B8CB8F66BC /* Classes */,
-			);
-			path = QNRefresh;
 			sourceTree = "<group>";
 		};
 		724EBFF828F6B9A476294ED0DFE68870 /* Targets Support Files */ = {
@@ -182,6 +183,20 @@
 				4E6FF81CDC8C7BA51F5807F0C8AD72F4 /* QNRefresh */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B15A094A2B3EFAEA50EA9624F5AF0C43 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				237B2C6C877C57E89A531DB0CA4350A0 /* QNHeaderRefreshView.h */,
+				2023240CEFE9C9434EEAB81BA5733082 /* QNHeaderRefreshView.m */,
+				D3ED20E4347C61B6491FD6A4F40BC476 /* QNRefreshComponent.h */,
+				7779E09621022515EDD1E626E1280FBB /* QNRefreshComponent.m */,
+				2C562B82FFC1981CD2D94FB4E857FD15 /* UIScrollView+QNHeaderRefresh.h */,
+				742045DE2053F7AF66754A350ABDE9F9 /* UIScrollView+QNHeaderRefresh.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B2A7B98F950C1F2A192295BE0D9D07F4 /* Pods-QNRefresh_Example */ = {
@@ -224,27 +239,17 @@
 			path = "Example/Pods/Target Support Files/QNRefresh";
 			sourceTree = "<group>";
 		};
-		EE788F3647FA7118446C43B8CB8F66BC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E2B3A6F81E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h */,
-				E2B3A6F91E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m */,
-				E2B3A7001E8F729200623AFD /* QNRefreshComponent.h */,
-				E2B3A7011E8F729200623AFD /* QNRefreshComponent.m */,
-				E2B3A7041E8F827600623AFD /* QNHeaderRefreshView.h */,
-				E2B3A7051E8F827600623AFD /* QNHeaderRefreshView.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1AA00B01B60D0EF7ADA0D4A568273BDC /* Headers */ = {
+		119E49FBB23FA829127E66E9B6D3E85E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9049EA92D0BC592A27A5F5B23208430C /* QNRefresh-umbrella.h in Headers */,
+				EB7F74A6081A28391C8FED4380DB3AC8 /* QNHeaderRefreshView.h in Headers */,
+				73AB1119EA0011D4622E6B5F0FF96917 /* QNRefresh-umbrella.h in Headers */,
+				526C9049AACECA9E3BCC29A4332C84C2 /* QNRefreshComponent.h in Headers */,
+				40AB4297443115FAC00436D37321D099 /* UIScrollView+QNHeaderRefresh.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +257,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2B3A6FA1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.h in Headers */,
-				E2B3A7061E8F827600623AFD /* QNHeaderRefreshView.h in Headers */,
 				436886219AE0D3F04DC67D56B6D830A8 /* Pods-QNRefresh_Example-umbrella.h in Headers */,
-				E2B3A7021E8F729200623AFD /* QNRefreshComponent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +276,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA3D428F97B0C87682695387AF86A57 /* Build configuration list for PBXNativeTarget "QNRefresh" */;
 			buildPhases = (
-				B7355E3060A2038D6C1AAD44A455447F /* Sources */,
+				D8574C6CF7F074C96F8512170EC8072C /* Sources */,
 				86D0D5D0BD98736E13DFE1B0509D4DA1 /* Frameworks */,
-				1AA00B01B60D0EF7ADA0D4A568273BDC /* Headers */,
+				119E49FBB23FA829127E66E9B6D3E85E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -363,18 +365,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2B3A7031E8F729200623AFD /* QNRefreshComponent.m in Sources */,
 				EDE722E96CB28A0ACC1103C30F1DA843 /* Pods-QNRefresh_Example-dummy.m in Sources */,
-				E2B3A7071E8F827600623AFD /* QNHeaderRefreshView.m in Sources */,
-				E2B3A6FB1E8F6F7D00623AFD /* UIScrollView+QNHeaderRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7355E3060A2038D6C1AAD44A455447F /* Sources */ = {
+		D8574C6CF7F074C96F8512170EC8072C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F257FB33AC55554D8FBD1761EB9523 /* QNRefresh-dummy.m in Sources */,
+				A57BBCBB636B5E2E6579DA864FDB74E3 /* QNHeaderRefreshView.m in Sources */,
+				A043927BDEE4E1F6628D7A2F03AA2630 /* QNRefresh-dummy.m in Sources */,
+				BFF500C840089C10AA066F4D4F26EAFD /* QNRefreshComponent.m in Sources */,
+				C6295FF11C8238FC338B84DDCB19084C /* UIScrollView+QNHeaderRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

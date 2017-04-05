@@ -7,8 +7,12 @@
 //
 
 #import "QNViewController.h"
+#import "UIScrollView+QNHeaderRefresh.h"
+
 
 @interface QNViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,6 +21,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.alpha = 0.1;
+    [self.tableView addHeaderRefreshWithRefreshBlock:^{
+    } position:QNRefreshPositionTop];
+    
+    
+//    UIEdgeInsets contentInset = self.tableView.contentInset;
+//    self.tableView.contentInset = UIEdgeInsetsMake(20,contentInset.left,contentInset.bottom,contentInset.right);
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

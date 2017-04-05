@@ -35,11 +35,13 @@ typedef void (^QNRefreshComponentRefreshingBlock)();
         }
         QNHeaderRefreshView *view = [[QNHeaderRefreshView alloc] initWithFrame:CGRectMake(0, yOrigin, self.bounds.size.width, QNRefreshViewHeight)];
         view.refreshingBlock = block;
+        view.backgroundColor = [UIColor redColor];
         view.scrollView = self;
         [self addSubview:view];
         
-//        view.originalTopInset = self.contentInset.top;
-//        view.originalBottomInset = self.contentInset.bottom;
+        view.originalTopInset = self.contentInset.top;
+        view.originalBottomInset = self.contentInset.bottom;
+        
 //        view.position = position;
 //        self.pullToRefreshView = view;
 //        self.showsPullToRefresh = YES;
