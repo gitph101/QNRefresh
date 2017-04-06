@@ -13,7 +13,12 @@
 
 @interface UIScrollView (QNHeaderRefresh)
 
+
+-(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block;
+
 -(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block position:(QNRefreshPosition)position;
+
 @property (nonatomic, strong, readonly) QNHeaderRefreshView *headerRefreshView;
+
 
 @end

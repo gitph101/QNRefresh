@@ -49,6 +49,33 @@ static CGFloat const QNRefreshViewHeight = 60;
     [self.scrollView removeObserver:self forKeyPath:@"contentSize"];;
 }
 
+-(void)endRefresh
+{
+    self.state = QNRefreshStateStop;
+}
+
+- (void)beginRefresh
+{
+    self.state = QNRefreshStatePulling;
+}
+
+-(void)setState:(QNRefreshState)state{
+    _state = state;
+    switch (state) {
+        case QNRefreshStateStop:
+        case QNRefreshStateAll:
+            [self stopAnimating];
+            break;
+        case QNRefreshStatePulling:
+            break;
+        case QNRefreshStateRefreshing:
+            [self startAnimating];
+            break;
+        default:
+            break;
+    }
+    [self layoutSubviews];
+}
 
 #pragma mark - Observing
 
@@ -56,7 +83,7 @@ static CGFloat const QNRefreshViewHeight = 60;
 {
     if([keyPath isEqualToString:@"contentOffset"])
         [self scrollViewDidScroll:[[change valueForKey:NSKeyValueChangeNewKey] CGPointValue]];
-    else if([keyPath isEqualToString:@"contentSize"]) {
+    else if([keyPath isEqualToString:@"contentSize"]) {        
         [self layoutSubviews];
         CGFloat yOrigin;
         switch (self.position) {
@@ -125,45 +152,33 @@ static CGFloat const QNRefreshViewHeight = 60;
 - (void)startAnimating{
     switch (self.position) {
         case QNRefreshPositionTop:
-            
             if(fequalzero(self.scrollView.contentOffset.y)) {
                 [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
-//                self.wasTriggeredByUser = NO;
             }
             else
-//                self.wasTriggeredByUser = YES;
-            
-            break;
+                break;
         case QNRefreshPositionBottom:
-            
             if((fequalzero(self.scrollView.contentOffset.y) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
                || fequal(self.scrollView.contentOffset.y, self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) {
                 [self.scrollView setContentOffset:(CGPoint){.y = MAX(self.scrollView.contentSize.height - self.scrollView.bounds.size.height, 0.0f) + self.frame.size.height} animated:YES];
-//                self.wasTriggeredByUser = NO;
             }
             else
-//                self.wasTriggeredByUser = YES;
-            
-            break;
+                break;
     }
     
-    self.state = QNRefreshStateRefreshing;
 }
 
 - (void)stopAnimating {
-    self.state = QNRefreshStateStop;
-    
     switch (self.position) {
         case QNRefreshPositionTop:
-            if(1/*!self.wasTriggeredByUser*/)
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.originalTopInset) animated:YES];
+            [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.originalTopInset) animated:YES];
             break;
         case QNRefreshPositionBottom:
-            if(1/*!self.wasTriggeredByUser*/)
-                [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.originalBottomInset) animated:YES];
+            [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.originalBottomInset) animated:YES];
             break;
     }
 }
+
 
 
 @end

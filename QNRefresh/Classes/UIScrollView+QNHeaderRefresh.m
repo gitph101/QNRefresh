@@ -19,6 +19,11 @@ typedef void (^QNRefreshComponentRefreshingBlock)();
 
 @implementation UIScrollView (QNHeaderRefresh)
 
+-(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block
+{
+    [self addHeaderRefreshWithRefreshBlock:block position:QNRefreshPositionTop];
+}
+
 -(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block position:(QNRefreshPosition)position
 {
     if (!self.headerRefreshView) {
@@ -35,35 +40,32 @@ typedef void (^QNRefreshComponentRefreshingBlock)();
         }
         QNHeaderRefreshView *view = [[QNHeaderRefreshView alloc] initWithFrame:CGRectMake(0, yOrigin, self.bounds.size.width, QNRefreshViewHeight)];
         view.refreshingBlock = block;
-        view.backgroundColor = [UIColor redColor];
         view.scrollView = self;
         [self addSubview:view];
-        
         view.originalTopInset = self.contentInset.top;
         view.originalBottomInset = self.contentInset.bottom;
-        
-//        view.position = position;
-//        self.pullToRefreshView = view;
-//        self.showsPullToRefresh = YES;
-        
-        
-        
+        self.headerRefreshView = view;
     }
 }
--(void)endRefresh {
 
+-(void)endRefresh {
+    [self.headerRefreshView endRefresh];
 }
 
-- (void)setPullToRefreshView:(QNHeaderRefreshView *)headerRefreshView {
-    [self willChangeValueForKey:@"SVPullToRefreshView"];
+- (void)setHeaderRefreshView:(QNHeaderRefreshView *)headerRefreshView {
+    [self willChangeValueForKey:@"QNHeaderRefreshView"];
     objc_setAssociatedObject(self, &QNHeaderRefreshViewString,
                              headerRefreshView,
                              OBJC_ASSOCIATION_ASSIGN);
-    [self didChangeValueForKey:@"SVPullToRefreshView"];
+    [self didChangeValueForKey:@"QNHeaderRefreshView"];
 }
 
 
 - (QNHeaderRefreshView *)headerRefreshView {
     return objc_getAssociatedObject(self, &QNHeaderRefreshViewString);
+}
+
+- (void)startAnimating{
+    
 }
 @end
