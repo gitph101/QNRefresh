@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, QNRefreshState) {
     QNRefreshStatePulling,
     /** 正在刷新中的状态 */
     QNRefreshStateRefreshing,
-    /** 即将刷新的状态 */
+    /** 完成刷新状态 */
     QNRefreshStateAll
 };
 
@@ -24,7 +24,6 @@ typedef NS_ENUM(NSUInteger, QNRefreshPosition) {
     QNRefreshPositionTop = 0,
     QNRefreshPositionBottom,
 };
-
 
 /** 进入刷新状态的回调 */
 typedef void (^QNRefreshComponentRefreshingBlock)();
