@@ -31,40 +31,39 @@
      switch (self.state) {
         case QNRefreshStateAll:
         case QNRefreshStateStop:
-            [self removeAnimationGroup];
+            [self _qn_removeAnimationGroup];
             break;
         case QNRefreshStatePulling:
-            [self addAnimationGroup];
+            [self _qn_addAnimationGroup];
             break;
         case QNRefreshStateRefreshing:
-            [self addAnimationGroup];
+            [self _qn_addAnimationGroup];
             break;
     }
 }
 
-- (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter {
+- (id)initWithFrame:(CGRect)frame {
+    if(self = [super initWithFrame:frame]) {
+         [self _qn_waveAnimationLayerWithView:self diameter:60];
+    }
+    return self;
+}
+
+
+- (void)_qn_waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter {
     self.waveLayer.bounds = CGRectMake(0, 0, diameter, diameter);
     self.waveLayer.cornerRadius = diameter / 2; //设置圆角变为圆形
     [self.layer addSublayer:self.waveLayer];
 }
 
--(void)addAnimationGroup{
+-(void)_qn_addAnimationGroup{
     [self.waveLayer addAnimation:self.animationGroup forKey:@"key"];
 }
 
 
--(void)removeAnimationGroup{
+-(void)_qn_removeAnimationGroup{
     [self.waveLayer removeAllAnimations];
 }
-
-
-- (id)initWithFrame:(CGRect)frame {
-    if(self = [super initWithFrame:frame]) {
-         [self waveAnimationLayerWithView:self diameter:60];
-    }
-    return self;
-}
-
 
 #pragma mark - getting and setting
 
