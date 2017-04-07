@@ -25,7 +25,6 @@
     [super endRefresh];
 }
 
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -43,7 +42,7 @@
     }
 }
 
-- (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter duration:(CGFloat)duration {
+- (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter {
     self.waveLayer.bounds = CGRectMake(0, 0, diameter, diameter);
     self.waveLayer.cornerRadius = diameter / 2; //设置圆角变为圆形
     [self.layer addSublayer:self.waveLayer];
@@ -61,7 +60,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
-         [self waveAnimationLayerWithView:self diameter:60 duration:kDuration];
+         [self waveAnimationLayerWithView:self diameter:60];
     }
     return self;
 }

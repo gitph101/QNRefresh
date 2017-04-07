@@ -23,30 +23,30 @@
     [super endRefresh];
 }
 
-
 - (void)layoutSubviews
 {
-    [super layoutSubviews];
-    switch (self.state) {
-        case QNRefreshStateAll:
-        case QNRefreshStateStop:
-            [self removeAnimationGroup];
-            break;
-            
-        case QNRefreshStatePulling:
-            [self addAnimationGroup];
-            break;
-        case QNRefreshStateRefreshing:
-            [self addAnimationGroup];
-            break;
-    }
+   [super layoutSubviews];
     
+//    switch (self.state) {
+//        case QNRefreshStateAll:
+//        case QNRefreshStateStop:
+//            [self removeAnimationGroup];
+//            break;
+//            
+//        case QNRefreshStatePulling:
+//            [self addAnimationGroup];
+//            break;
+//        case QNRefreshStateRefreshing:
+//            [self addAnimationGroup];
+//            break;
+//    }
 }
 
-- (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter duration:(CGFloat)duration {
+- (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter {
     self.waveLayer.bounds = CGRectMake(0, 0, diameter, diameter);
     self.waveLayer.cornerRadius = diameter / 2; //设置圆角变为圆形
     [self.layer addSublayer:self.waveLayer];
+    [self addAnimationGroup];
 }
 
 -(void)addAnimationGroup{
@@ -60,7 +60,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
-        [self waveAnimationLayerWithView:self diameter:60 duration:2];
+        [self waveAnimationLayerWithView:self diameter:60];
     }
     return self;
 }
@@ -78,7 +78,8 @@
 }
 
 -(CAAnimationGroup *)animationGroup{
-    if (_animationGroup = nil) {
+    
+    if (_animationGroup == nil) {
         _animationGroup = [CAAnimationGroup animation];
         _animationGroup.duration = kDuration;
         _animationGroup.repeatCount = INFINITY; //重复无限次
@@ -94,7 +95,7 @@
         scaleAnimation.removedOnCompletion = NO;
         
         CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimation.fromValue = @0.4; //开始的大小
+        opacityAnimation.fromValue = @1.0; //开始的大小
         opacityAnimation.toValue = @0.0; //最后的大小
         opacityAnimation.duration = kDuration;
         opacityAnimation.removedOnCompletion = NO;

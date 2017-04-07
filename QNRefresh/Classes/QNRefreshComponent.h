@@ -17,8 +17,6 @@ typedef NS_ENUM(NSInteger, QNRefreshState) {
     /** 正在刷新中的状态 */
     QNRefreshStateRefreshing,
     /** 即将刷新的状态 */
-    QNRefreshStateWillRefresh,
-    /** 所有数据加载完毕，没有更多的数据了 */
     QNRefreshStateAll
 };
 
