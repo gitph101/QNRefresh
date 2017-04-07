@@ -77,7 +77,7 @@
 }
 
 -(CAAnimationGroup *)animationGroup{
-    if (_animationGroup = nil) {
+    if (_animationGroup == nil) {
         _animationGroup = [CAAnimationGroup animation];
         _animationGroup.duration = kDuration;
         _animationGroup.repeatCount = INFINITY; //重复无限次
