@@ -60,6 +60,8 @@ static CGFloat const QNRefreshViewHeight = 60;
 }
 
 -(void)setState:(QNRefreshState)state{
+    if (_state == state)
+        return;
     _state = state;
     switch (state) {
         case QNRefreshStateStop:
@@ -68,8 +70,12 @@ static CGFloat const QNRefreshViewHeight = 60;
             break;
         case QNRefreshStatePulling:
             break;
-        case QNRefreshStateRefreshing:
+        case QNRefreshStateRefreshing:{
+            if (self.refreshingBlock) {
+                self.refreshingBlock();
+            }
             [self startAnimating];
+        }
             break;
         default:
             break;

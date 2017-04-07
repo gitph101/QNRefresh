@@ -10,9 +10,10 @@
 #endif
 #endif
 
+#import "QNFooterRefreshView.h"
 #import "QNHeaderRefreshView.h"
 #import "QNRefreshComponent.h"
-#import "UIScrollView+QNHeaderRefresh.h"
+#import "UIScrollView+QNRefresh.h"
 
 FOUNDATION_EXPORT double QNRefreshVersionNumber;
 FOUNDATION_EXPORT const unsigned char QNRefreshVersionString[];

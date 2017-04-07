@@ -30,10 +30,6 @@ typedef NS_ENUM(NSUInteger, QNRefreshPosition) {
 
 /** 进入刷新状态的回调 */
 typedef void (^QNRefreshComponentRefreshingBlock)();
-/** 开始刷新后的回调(进入刷新状态后的回调) */
-typedef void (^QNRefreshComponentbeginRefreshingCompletionBlock)();
-/** 结束刷新后的回调 */
-typedef void (^QNRefreshComponentEndRefreshingCompletionBlock)();
 
 @interface QNRefreshComponent : UIView
 
@@ -42,11 +38,12 @@ typedef void (^QNRefreshComponentEndRefreshingCompletionBlock)();
 
 @property (nonatomic, assign) QNRefreshState state;
 
-@property (nonatomic, readonly) QNRefreshPosition position;
+@property (nonatomic, assign) QNRefreshPosition position;
 
 @property (copy, nonatomic) QNRefreshComponentRefreshingBlock refreshingBlock;
 
 @property (nonatomic, readwrite) CGFloat originalTopInset;
+
 @property (nonatomic, readwrite) CGFloat originalBottomInset;
 
 -(void)endRefresh;

@@ -10,8 +10,5 @@
 
 @interface QNHeaderRefreshView : QNRefreshComponent
 
--(void)addHeaderRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block position:(QNRefreshPosition)position;
-
-- (void)stopAnimating;
 
 @end

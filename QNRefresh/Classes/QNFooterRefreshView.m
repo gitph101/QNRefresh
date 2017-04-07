@@ -1,25 +1,23 @@
 //
-//  QNHeaderRefreshView.m
+//  QNFooterRefreshView.m
 //  Pods
 //
-//  Created by 研究院01 on 17/4/1.
+//  Created by 研究院01 on 17/4/7.
 //
 //
 
-#import "QNHeaderRefreshView.h"
-#import "QNRefreshComponent.h"
+#import "QNFooterRefreshView.h"
 
 #define kDuration 2
 
-@interface QNHeaderRefreshView ()
+@interface QNFooterRefreshView ()
 
 @property(nonatomic, strong)CALayer *waveLayer;
 @property(nonatomic, strong)CAAnimationGroup *animationGroup;
 
 @end
 
-@implementation QNHeaderRefreshView
-
+@implementation QNFooterRefreshView
 
 -(void)endRefresh{
     [super endRefresh];
@@ -29,11 +27,12 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-     switch (self.state) {
+    switch (self.state) {
         case QNRefreshStateAll:
         case QNRefreshStateStop:
             [self removeAnimationGroup];
             break;
+            
         case QNRefreshStatePulling:
             [self addAnimationGroup];
             break;
@@ -41,6 +40,7 @@
             [self addAnimationGroup];
             break;
     }
+    
 }
 
 - (void)waveAnimationLayerWithView:(UIView *)view diameter:(CGFloat)diameter duration:(CGFloat)duration {
@@ -53,7 +53,6 @@
     [self.waveLayer addAnimation:self.animationGroup forKey:@"key"];
 }
 
-
 -(void)removeAnimationGroup{
     [self.waveLayer removeAllAnimations];
 }
@@ -61,7 +60,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
-         [self waveAnimationLayerWithView:self diameter:60 duration:kDuration];
+        [self waveAnimationLayerWithView:self diameter:60 duration:2];
     }
     return self;
 }
@@ -103,5 +102,4 @@
     }
     return _animationGroup;
 }
-
 @end
