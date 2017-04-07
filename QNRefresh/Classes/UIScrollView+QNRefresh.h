@@ -22,4 +22,6 @@
 
 -(void)addFooterRefreshWithRefreshBlock:(QNRefreshComponentRefreshingBlock )block;
 
+-(void)endRefresh;
+
 @end
