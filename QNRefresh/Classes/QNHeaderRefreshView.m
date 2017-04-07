@@ -93,7 +93,7 @@
         scaleAnimation.removedOnCompletion = NO;
         
         CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimation.fromValue = @0.4; //开始的大小
+        opacityAnimation.fromValue = @1.0; //开始的大小
         opacityAnimation.toValue = @0.0; //最后的大小
         opacityAnimation.duration = kDuration;
         opacityAnimation.removedOnCompletion = NO;

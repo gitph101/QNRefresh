@@ -75,7 +75,7 @@
 }
 
 -(CAAnimationGroup *)animationGroup{
-    if (_animationGroup = nil) {
+    if (_animationGroup == nil) {
         _animationGroup = [CAAnimationGroup animation];
         _animationGroup.duration = kDuration;
         _animationGroup.repeatCount = INFINITY; //重复无限次
@@ -91,7 +91,7 @@
         scaleAnimation.removedOnCompletion = NO;
         
         CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-        opacityAnimation.fromValue = @0.4; //开始的大小
+        opacityAnimation.fromValue = @1.0; //开始的大小
         opacityAnimation.toValue = @0.0; //最后的大小
         opacityAnimation.duration = kDuration;
         opacityAnimation.removedOnCompletion = NO;
